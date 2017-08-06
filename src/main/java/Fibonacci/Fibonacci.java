@@ -2,7 +2,7 @@ package Fibonacci;
 
 import java.util.Scanner;
 
-public class Main {
+public class Fibonacci {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         int number;
