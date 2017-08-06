@@ -17,6 +17,8 @@ public class Factorial {
             silnia = silnia * n;
             n -= 1;
         }
+
+
         System.out.println("Silnia to: " + silnia);
 
 
