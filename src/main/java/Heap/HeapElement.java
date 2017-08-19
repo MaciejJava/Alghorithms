@@ -4,7 +4,7 @@ public class HeapElement {
     private int value;
     private HeapElement prev = null;
 
-    public HeapElement(int value, HeapElement prev){
+    public HeapElement(int value, HeapElement prev) {
         this.value = value;
         this.prev = prev;
     }
