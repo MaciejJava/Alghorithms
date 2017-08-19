@@ -20,6 +20,7 @@ public class IdCheck {
         String idNumber = getStringFromUser("Podaj numer seryjny dowodu ");
         char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
         int sum = 0;
+        int sum1 = 0;
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < alphabet.length; j++ ) {
@@ -40,7 +41,42 @@ public class IdCheck {
             }
         }
 
-        printInt(sum);
+        for (int i = 4; i < 9 ; i++) {
+            int temp = idNumber.charAt(i);
+            temp -=48;
+
+                    switch (i){
+
+                        case 4:
+                            sum += temp * 7;
+                            break;
+                        case 5:
+                            sum += temp * 3;
+                            break;
+                        case 6:
+                            sum += temp;
+                            break;
+                        case 7:
+                            sum += temp * 7;
+                            break;
+                        case 8:
+                            sum += temp * 3;
+                            break;
+                    }
+                }
+
+        int mod = sum %10;
+        int temp = idNumber.charAt(3);
+        temp -= 48;
+        if (mod == temp) {
+            printInt(1);
+        }
+        else {
+            printInt(0);
+
+        }
+
+
 
     }
 
