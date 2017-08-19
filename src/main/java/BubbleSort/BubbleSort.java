@@ -2,7 +2,7 @@ package BubbleSort;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] tab = {12,34,45,65,76,87,56,4,3,2,8,9};
+        int[] tab = {12,34,45,65,76,87,56,4,3,2,8,8,8,9};
         int temp;
         int change = 1;
 
